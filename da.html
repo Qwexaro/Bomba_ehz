@@ -1,0 +1,96 @@
+<script>
+
+    // let sum = 1
+    // sum = sum * num
+// 
+    // while(+prompt() > 0)
+    // {
+// 
+    // }
+    // for(let i = 1; i < 100; i = i * 2 )
+    // {
+        // console.log(i)
+    // }
+
+    // pervoe zadanie
+
+    for(let i = 1; i < 11; i++)
+    {
+        console.log(i + " hello, World!")
+    }
+
+    // vtoroe zadanie
+
+    let kolechko = +prompt("Vvedi kolichestvo vivodov hello world")
+    for(let i = 1; i < kolechko + 1; i++)
+    {
+        alert(i + "Hello world")
+    }
+
+    // tretie zadanie
+
+    let diapozonische_1 = +prompt("Vvedi pervu tsifru diapozona")
+    let diapozonische_2 = +prompt("Vvedi konets diapozona")
+    for(let i = diapozonische_1; i < diapozonische_2 + 1; i++)
+    {
+        alert(i)
+    }
+
+    // chetvertoe zadanie
+
+    let nachalo = +prompt("Vvedi nachalo diapozona");
+    let konets = +prompt("Vvedi konets diapozona");
+    let sum = 0;
+    let umno = 1;
+    
+    for (let i = nachalo; i <= konets; i++) {
+        sum += i;
+        umno *= i;
+        console.log("Summa: ", sum);
+        console.log("Proizvedenie: ", umno)
+    }
+    
+    // pyatoe zadanie
+
+    let samsa = 0;
+
+    while (true) {
+    let chislo = +prompt("Vvedite chislo:");
+    
+    if (chislo < 0) {
+        break;
+    }
+
+    samsa += chislo;
+    }
+
+    console.log("Summa vvidennih tsifr:", samsa);
+
+
+    // shestoe zadanie
+
+    let tsifra = +prompt("Vvedite chislo:");
+
+    if (tsifra == 0) {
+        console.log("Vi ne vveli ni odnogo chisla.");
+    } else {
+        let max_chislo = tsifra;
+        let min_chislo = tsifra;
+    
+        while (tsifra != 0) {
+            tsifra = +prompt("Vvedite chislo:");
+        
+            if (tsifra > max_chislo && tsifra != 0) {
+                max_chislo = tsifra;
+            }
+        
+            if (tsifra < min_chislo && tsifra != 0) {
+                min_chislo = tsifra;
+            }
+        }
+    
+        console.log("Maximalnoe chislo:", max_chislo);
+        console.log("Minimalnoe chislo:", min_chislo);
+    }
+
+</script>
